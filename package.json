@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "triggerAllTests-headless": "npx cypress run",
     "triggerAllTests-headed": "npx cypress run --headed",
-    "triggerAllTests-webdriveruni": "npx cypress run --spec cypress/e2e/WebDriverUniversity/*",
+    "triggerAllTests-webdriveruni": "npx cypress run --spec cypress/e2e/WebDriverUniversity/* --parallel",
     "triggerAllTests-autostore": "npx cypress run --spec cypress/e2e/AutomationStore/*",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
